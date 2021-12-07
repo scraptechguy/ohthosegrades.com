@@ -12,6 +12,7 @@ body {
 header {
     background: #1b1e24;
     padding: 20px;
+    border-bottom: 1px solid grey;
 }
 
 header > h1 {
@@ -23,35 +24,30 @@ header > h1 {
 }
 
 .body-element {
-    display: inline-block;
     padding: 5%;
 }
 
 .grade-pipeline {
-    display: grid;
-    width: 400px;
-    height: 100px;
+    position: absolute;
+    top: 13vw;
+    left: 10vw;
+
+    width: 40vw;
+    height: 10vw;
     background: white;
-    border: 2px solid lightblue;
+    border: 2px solid grey;
     text-align: center;
 }
 
 .create {
-    grid-column: 1;
-    grid-row: 1;
+    position: absolute;
+    top: 8.8vw;
+    left: 19vw;
 
-    top: 85%;
-    left: 45%;
-    font-size: 25px;
+    width: 2.5vw;
+    height: 2.5vw;
+    font-size: 1.7vw;
     color: blue;
-}
-
-.create-background {
-    grid-column: 1;
-    grid-row: 1;
-
-    width: 50px;
-    height: 50px;
     background: white;
     border: 2px solid grey;
     border-radius: 50%;
@@ -61,11 +57,16 @@ header > h1 {
 .create:hover {
     cursor: pointer;
     background: gainsboro;
+    border: 2px solid black;
 }
 
 .grade-result {
+    position: absolute;
+    top: 20vw;
+    left: 70vw;
+
     color: grey;
-    font-size: 100px;
+    font-size: 15vw;
 }
 
 .footer {
@@ -77,4 +78,3 @@ header > h1 {
     display: inline-block;
     padding: 50px;
 }
-
