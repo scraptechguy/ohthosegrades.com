@@ -13,10 +13,9 @@ header {
     background: #1b1e24;
     padding: 20px;
     border-bottom: 1px solid grey;
-}
 
-header > h1 {
     color: white;
+    font-size: 2vw;
 }
 
 .body-elements {
@@ -40,7 +39,7 @@ header > h1 {
 }
 
 .create {
-    position: absolute;
+    position: relative;
     top: 8.8vw;
     left: 19vw;
 
@@ -60,6 +59,70 @@ header > h1 {
     border: 2px solid black;
 }
 
+.first-row {
+    display: inline-block;
+    font-size: 1.3vw;
+}
+
+#weight-label {
+    position: absolute;
+    top: 2.3vw;
+    left: 5vw;
+}
+
+.weight-input {
+    position: absolute;
+    top: 2.7vw;
+    left: 15vw;
+}
+
+.weight-input:focus {
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+#output1 {
+    font-size: 2vw;
+}
+
+.first-row > span {
+    position: absolute;
+    top: 1.9vw;
+    left: 30vw;
+
+    font-size: 2vw;
+}
+
+.second-row {
+    display: inline-block;
+    font-size: 1.3vw;
+}
+
+#grade-label {
+    position: absolute;
+    top: 5.8vw;
+    left: 5vw;
+}
+
+.grade-input {
+    position: absolute;
+    top: 5.8vw;
+    left: 15vw;
+}
+
+.grade-input:focus {
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.second-row > span {
+    position: absolute;
+    top: 5.2vw;
+    left: 30vw;
+
+    font-size: 2vw;
+}
+
 .grade-result {
     position: absolute;
     top: 20vw;
@@ -71,10 +134,17 @@ header > h1 {
 
 .footer {
     text-align: center;
-    color: lightblue;
 }
 
-.footer-item {
+.footer-item > a {
     display: inline-block;
-    padding: 50px;
+    font-size: 1vw;
+    color: #74a1fb;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-item > a:hover {
+    text-decoration: underline;
+    color: #3e6cc9;
 }
